@@ -11,17 +11,17 @@ BEGIN
         WRITE("Write a sentence that end with a point")
         READ(sentence)
         numOfChar = sentence.length
-        IF (sentence.length >= 2 and sentence[sentence.length-1] = ".") THEN
+        IF (numOfChar >= 2 and sentence[numOfChar-1] = ".") THEN
             isSentence = TRUE
         END_IF
     END_WHILE
     
     
-    FOR i FROM 0 TO sentence.length-1 STEP 1  DO
+    FOR i FROM 0 TO numOfChar-1 STEP 1  DO
         IF (sentence[i]= " ") THEN
             numOfWORds += 1
         END_IF
-        IF (toUpper(sentence[i])= "A" OR ToUpper(sentence[i]) = "E" OR ToUpper(sentence[i]) = "U" OR ToUpper(sentence[i]) = "I" OR ToUpper(sentence[i]) = "O" OR ToUpper(sentence[i]) = "Y") THEN
+        IF (ToUpper(sentence[i])= "A" OR ToUpper(sentence[i]) = "E" OR ToUpper(sentence[i]) = "U" OR ToUpper(sentence[i]) = "I" OR ToUpper(sentence[i]) = "O" OR ToUpper(sentence[i]) = "Y") THEN
             numOfVow += 1
         END_IF
     END_FOR
