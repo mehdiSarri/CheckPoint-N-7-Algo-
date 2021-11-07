@@ -1,6 +1,6 @@
 ALGORITHM countNumberOfCharInSentence
 VAR
-    sentence : STRING :='';
+    sentence : STRING[];
     c : CHAR ;='';
     isSentence : BOOLEAN: = FALSE;
     numOfWORds : INT :=1;
